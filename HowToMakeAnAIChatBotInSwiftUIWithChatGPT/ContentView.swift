@@ -26,7 +26,8 @@ struct ContentView: View {
                     .background(Color.gray.opacity(0.1))
                     .cornerRadius(15)
                 Button {
-                    
+                    self.chatController.sendMessage(content: string)
+                    string = ""
                 } label: {
                     Image(systemName: "paperplane")
                 }
